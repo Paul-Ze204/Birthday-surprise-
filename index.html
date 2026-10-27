@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Happy Birthday, Krista 💙</title>
+
+
+    <style>
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            min-height: 100vh;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            color: white;
+
+            overflow-x: hidden;
+
+            background:
+                radial-gradient(
+                    circle at 50% 0%,
+                    #6da9e8 0%,
+                    #416ba9 22%,
+                    #30245f 48%,
+                    #171638 72%,
+                    #090d20 100%
+                );
+        }
+
+
+        /* =====================================================
+           OPENING SCREEN
+        ===================================================== */
+
+        #opening {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 30px;
+
+            transition: opacity 1s ease;
+        }
+
+
+        .opening-content {
+
+            width: 100%;
+            max-width: 650px;
+        }
+
+
+        .envelope {
+
+            font-size: 80px;
+
+            margin-bottom: 25px;
+
+            animation:
+                envelopeFloat
+                3s
+                ease-in-out
+                infinite;
+
+            filter:
+                drop-shadow(
+                    0 0 25px
+                    rgba(110, 200, 255, 0.7)
+                );
+        }
+
+
+        @keyframes envelopeFloat {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0)
+                    rotate(-2deg);
+            }
+
+            50% {
+
+                transform:
+                    translateY(-15px)
+                    rotate(2deg);
+            }
+        }
+
+
+        .opening-title {
+
+            font-size:
+                clamp(
+                    2rem,
+                    8vw,
+                    4rem
+                );
+
+            color: #e5f4ff;
+
+            margin-bottom: 20px;
+
+            text-shadow:
+                0 0 25px
+                rgba(120, 200, 255, 0.35);
+        }
+
+
+        .opening-subtitle {
+
+            color: #cbdcff;
+
+            line-height: 1.8;
+
+            margin-bottom: 40px;
+
+            font-size: 1rem;
+        }
+
+
+        .open-button {
+
+            border: none;
+
+            padding:
+                16px 38px;
+
+            border-radius:
+                50px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #62b7ff,
+                    #7f83ff,
+                    #e99bc8
+                );
+
+            color: white;
+
+            font-size: 1rem;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 0 25px
+                rgba(90, 180, 255, 0.45);
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+
+        .open-button:hover {
+
+            transform:
+                scale(1.08);
+
+            box-shadow:
+                0 0 50px
+                rgba(100, 190, 255, 0.75);
+        }
+
+
+        /* =====================================================
+           BIRTHDAY SECTION
+        ===================================================== */
+
+        #birthday {
+
+            display: none;
+
+            width: 100%;
+
+            min-height: 100vh;
+
+            padding:
+                70px 20px 120px;
+
+            text-align: center;
+        }
+
+
+        .birthday-content {
+
+            width: 100%;
+
+            max-width: 850px;
+
+            margin: 0 auto;
+        }
+
+
+        /* =====================================================
+           CAKE
+        ===================================================== */
+
+        .cake {
+
+            font-size:
+                clamp(
+                    7rem,
+                    25vw,
+                    12rem
+                );
+
+            margin-bottom: 25px;
+
+            filter:
+                drop-shadow(
+                    0 0 35px
+                    rgba(110, 200, 255, 0.6)
+                );
+
+            animation:
+                cakeAppear
+                1.5s
+                ease
+                forwards,
+
+                cakeFloat
+                4s
+                ease-in-out
+                1.5s
+                infinite;
+        }
+
+
+        @keyframes cakeAppear {
+
+            0% {
+
+                opacity: 0;
+
+                transform:
+                    scale(0.2)
+                    translateY(100px);
+            }
+
+            60% {
+
+                transform:
+                    scale(1.1);
+            }
+
+            100% {
+
+                opacity: 1;
+
+                transform:
+                    scale(1);
+            }
+        }
+
+
+        @keyframes cakeFloat {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0);
+            }
+
+            50% {
+
+                transform:
+                    translateY(-10px);
+            }
+        }
+
+
+        /* =====================================================
+           BIRTHDAY TITLE
+        ===================================================== */
+
+        .birthday-title {
+
+            font-size:
+                clamp(
+                    2.5rem,
+                    9vw,
+                    5.5rem
+                );
+
+            margin-bottom: 15px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ffffff,
+                    #a9dcff,
+                    #c3b5ff,
+                    #ffb9da,
+                    #ffffff
+                );
+
+            background-size: 300%;
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            animation:
+                titleShimmer
+                5s
+                infinite;
+        }
+
+
+        @keyframes titleShimmer {
+
+            0% {
+                background-position: 0%;
+            }
+
+            50% {
+                background-position: 100%;
+            }
+
+            100% {
+                background-position: 0%;
+            }
+        }
+
+
+        .birthday-subtitle {
+
+            color: #cfe2ff;
+
+            font-size: 1.1rem;
+
+            margin-bottom: 55px;
+        }
+
+
+        /* =====================================================
+           LETTER INTRO
+        ===================================================== */
+
+        .letter-intro {
+
+            margin:
+                0 auto 50px;
+
+            max-width: 650px;
+
+            transition:
+                opacity 0.5s ease;
+        }
+
+
+        .letter-intro-text {
+
+            color: #d7e5ff;
+
+            line-height: 1.8;
+
+            margin-bottom: 25px;
+        }
+
+
+        .letter-envelope {
+
+            font-size: 6rem;
+
+            cursor: pointer;
+
+            display: inline-block;
+
+            filter:
+                drop-shadow(
+                    0 0 25px
+                    rgba(120, 200, 255, 0.5)
+                );
+
+            animation:
+                envelopePulse
+                2.5s
+                ease-in-out
+                infinite;
+
+            transition:
+                transform 0.3s ease;
+        }
+
+
+        .letter-envelope:hover {
+
+            transform:
+                scale(1.12);
+        }
+
+
+        @keyframes envelopePulse {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+            }
+
+            50% {
+
+                transform:
+                    translateY(-8px)
+                    rotate(-3deg);
+            }
+        }
+
+
+        /* =====================================================
+           LETTER BUTTON
+        ===================================================== */
+
+        .letter-button {
+
+            display: block;
+
+            margin:
+                15px auto 0;
+
+            padding:
+                13px 28px;
+
+            border:
+                1px solid
+                rgba(180, 220, 255, 0.4);
+
+            border-radius:
+                50px;
+
+            background:
+                rgba(
+                    100,
+                    180,
+                    255,
+                    0.15
+                );
+
+            color:
+                #dff3ff;
+
+            cursor:
+                pointer;
+
+            font-size:
+                0.95rem;
+
+            transition:
+                all 0.3s ease;
+        }
+
+
+        .letter-button:hover {
+
+            background:
+                rgba(
+                    100,
+                    180,
+                    255,
+                    0.3
+                );
+
+            transform:
+                scale(1.05);
+        }
+
+
+        /* =====================================================
+           LETTER
+        ===================================================== */
+
+        .letter {
+
+            width: 100%;
+
+            max-width: 750px;
+
+            margin: 0 auto;
+
+            padding:
+                0 40px;
+
+            text-align: left;
+
+            border-radius: 28px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(100, 190, 255, 0.18),
+                    rgba(130, 110, 255, 0.16),
+                    rgba(255, 170, 215, 0.10)
+                );
+
+            backdrop-filter:
+                blur(18px);
+
+            -webkit-backdrop-filter:
+                blur(18px);
+
+            border:
+                1px solid
+                rgba(
+                    180,
+                    220,
+                    255,
+                    0.30
+                );
+
+            box-shadow:
+                0 25px 70px
+                rgba(0, 0, 0, 0.45),
+
+                inset 0 0 35px
+                rgba(100, 190, 255, 0.08);
+
+            opacity: 0;
+
+            max-height: 0;
+
+            overflow: hidden;
+
+            transform:
+                translateY(30px);
+
+            transition:
+                max-height 1.2s ease,
+                opacity 0.7s ease,
+                transform 0.7s ease,
+                padding 0.8s ease;
+        }
+
+
+        /* LETTER OPEN */
+
+        .letter.open {
+
+            opacity: 1;
+
+            max-height:
+                3000px;
+
+            padding:
+                45px 40px;
+
+            transform:
+                translateY(0);
+        }
+
+
+        .letter-title {
+
+            text-align: center;
+
+            color:
+                #a9dcff;
+
+            font-size:
+                clamp(
+                    1.5rem,
+                    5vw,
+                    2.2rem
+                );
+
+            margin-bottom: 35px;
+
+            text-shadow:
+                0 0 20px
+                rgba(
+                    110,
+                    200,
+                    255,
+                    0.45
+                );
+        }
+
+
+        .letter .greeting {
+
+            color:
+                #ffb7d9;
+
+            font-size:
+                1.2rem;
+
+            margin-bottom:
+                30px;
+        }
+
+
+        .letter p {
+
+            color:
+                #edf6ff;
+
+            font-size:
+                1.05rem;
+
+            line-height:
+                2;
+
+            margin-bottom:
+                25px;
+        }
+
+
+        /* SPECIAL LINE */
+
+        .special-line {
+
+            margin:
+                35px 0;
+
+            padding:
+                22px;
+
+            border-left:
+                3px solid
+                #8ecbff;
+
+            border-radius:
+                12px;
+
+            background:
+                rgba(
+                    120,
+                    190,
+                    255,
+                    0.10
+                );
+
+            color:
+                #dff4ff !important;
+
+            font-style:
+                italic;
+
+            box-shadow:
+                0 0 25px
+                rgba(
+                    100,
+                    190,
+                    255,
+                    0.08
+                );
+        }
+
+
+        .signature {
+
+            text-align: right;
+
+            margin-top:
+                40px;
+
+            color:
+                #bbaeff;
+
+            font-style:
+                italic;
+
+            font-size:
+                1.1rem;
+
+            line-height:
+                1.8;
+        }
+
+
+        /* =====================================================
+           SPOTIFY
+        ===================================================== */
+
+        .music-section {
+
+            margin:
+                70px auto 0;
+
+            max-width:
+                700px;
+
+            padding:
+                25px;
+
+            border-radius:
+                24px;
+
+            background:
+                rgba(
+                    20,
+                    30,
+                    70,
+                    0.45
+                );
+
+            border:
+                1px solid
+                rgba(
+                    180,
+                    220,
+                    255,
+                    0.18
+                );
+
+            box-shadow:
+                0 20px 50px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.25
+                );
+        }
+
+
+        .music-title {
+
+            color:
+                #b9dfff;
+
+            margin-bottom:
+                10px;
+
+            font-size:
+                1.5rem;
+        }
+
+
+        .music-description {
+
+            color:
+                #cbdcff;
+
+            margin-bottom:
+                20px;
+
+            line-height:
+                1.6;
+        }
+
+
+        .spotify-container {
+
+            width: 100%;
+
+            overflow: hidden;
+
+            border-radius: 12px;
+        }
+
+
+        .spotify-container iframe {
+
+            display: block;
+
+            width: 100%;
+
+            height: 152px;
+
+            border: none;
+        }
+
+
+        /* SPOTIFY FALLBACK BUTTON */
+
+        .spotify-button {
+
+            display: inline-block;
+
+            margin-top: 18px;
+
+            padding:
+                11px 22px;
+
+            border-radius:
+                30px;
+
+            text-decoration: none;
+
+            color: white;
+
+            background:
+                rgba(
+                    100,
+                    190,
+                    255,
+                    0.18
+                );
+
+            border:
+                1px solid
+                rgba(
+                    180,
+                    220,
+                    255,
+                    0.25
+                );
+
+            transition:
+                all 0.3s ease;
+        }
+
+
+        .spotify-button:hover {
+
+            transform:
+                scale(1.05);
+
+            background:
+                rgba(
+                    100,
+                    190,
+                    255,
+                    0.3
+                );
+        }
+
+
+        /* =====================================================
+           FINAL MESSAGE
+        ===================================================== */
+
+        .final-message {
+
+            margin-top:
+                100px;
+
+            padding:
+                20px;
+        }
+
+
+        .final-message h2 {
+
+            font-size:
+                clamp(
+                    1.8rem,
+                    6vw,
+                    3rem
+                );
+
+            color:
+                #a9dcff;
+
+            margin-bottom:
+                20px;
+
+            text-shadow:
+                0 0 20px
+                rgba(
+                    100,
+                    190,
+                    255,
+                    0.4
+                );
+        }
+
+
+        .final-message p {
+
+            color:
+                #cbdcff;
+
+            line-height:
+                1.9;
+        }
+
+
+        .final-heart {
+
+            font-size:
+                2rem;
+
+            margin-top:
+                25px;
+
+            animation:
+                heartBeat
+                1.5s
+                ease-in-out
+                infinite;
+        }
+
+
+        @keyframes heartBeat {
+
+            0%,
+            100% {
+
+                transform:
+                    scale(1);
+            }
+
+            50% {
+
+                transform:
+                    scale(1.2);
+            }
+        }
+
+
+        /* =====================================================
+           FLOATING DECORATIONS
+        ===================================================== */
+
+        .floating {
+
+            position:
+                fixed;
+
+            bottom:
+                -40px;
+
+            pointer-events:
+                none;
+
+            z-index:
+                10;
+
+            animation:
+                floatUp
+                linear
+                forwards;
+        }
+
+
+        @keyframes floatUp {
+
+            from {
+
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+
+                opacity:
+                    1;
+            }
+
+            to {
+
+                transform:
+                    translateY(-110vh)
+                    rotate(360deg);
+
+                opacity:
+                    0;
+            }
+        }
+
+
+        /* =====================================================
+           BACKGROUND GLOW
+        ===================================================== */
+
+        .glow {
+
+            position:
+                fixed;
+
+            width:
+                300px;
+
+            height:
+                300px;
+
+            border-radius:
+                50%;
+
+            background:
+                rgba(
+                    100,
+                    190,
+                    255,
+                    0.08
+                );
+
+            filter:
+                blur(80px);
+
+            pointer-events:
+                none;
+
+            z-index:
+                -1;
+        }
+
+
+        .glow-one {
+
+            top:
+                10%;
+
+            left:
+                -100px;
+        }
+
+
+        .glow-two {
+
+            bottom:
+                10%;
+
+            right:
+                -100px;
+
+            background:
+                rgba(
+                    160,
+                    120,
+                    255,
+                    0.10
+                );
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 600px) {
+
+            #birthday {
+
+                padding:
+                    55px
+                    15px
+                    100px;
+            }
+
+
+            .opening-title {
+
+                font-size:
+                    2.2rem;
+            }
+
+
+            .opening-subtitle {
+
+                font-size:
+                    0.95rem;
+            }
+
+
+            .envelope {
+
+                font-size:
+                    65px;
+            }
+
+
+            .letter.open {
+
+                padding:
+                    30px 22px;
+            }
+
+
+            .letter p {
+
+                font-size:
+                    0.98rem;
+
+                line-height:
+                    1.9;
+            }
+
+
+            .letter .greeting {
+
+                font-size:
+                    1.1rem;
+            }
+
+
+            .birthday-subtitle {
+
+                margin-bottom:
+                    40px;
+            }
+
+
+            .letter-envelope {
+
+                font-size:
+                    5rem;
+            }
+
+
+            .music-section {
+
+                padding:
+                    18px;
+
+                margin-top:
+                    55px;
+            }
+
+
+            .final-message {
+
+                margin-top:
+                    75px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         BACKGROUND
+    ===================================================== -->
+
+    <div class="glow glow-one"></div>
+
+    <div class="glow glow-two"></div>
+
+
+
+    <!-- =====================================================
+         OPENING
+    ===================================================== -->
+
+    <section id="opening">
+
+        <div class="opening-content">
+
+
+            <div class="envelope">
+
+                💌
+
+            </div>
+
+
+            <h1 class="opening-title">
+
+                HELLO PO!
+
+            </h1>
+
+
+            <p class="opening-subtitle">
+
+                Ito ay isang liham na galing sa NBI.
+
+                <br>
+
+                Pakisigurado lang na mabasa mo ang nakasulat na liham. Maraming salamat! 💙
+
+            </p>
+
+
+            <button
+                class="open-button"
+                onclick="openSurprise()"
+            >
+
+                surprise, surprise paki, paki-buksan ✨
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         BIRTHDAY
+    ===================================================== -->
+
+    <section id="birthday">
+
+        <div class="birthday-content">
+
+
+            <!-- CAKE -->
+
+            <div class="cake">
+
+                🎂
+
+            </div>
+
+
+
+            <!-- TITLE -->
+
+            <h1 class="birthday-title">
+
+                Happy Birthday, Krista!
+
+            </h1>
+
+
+            <p class="birthday-subtitle">
+
+                To someone very special 💙
+
+            </p>
+
+
+
+            <!-- =================================================
+                 LETTER INTRO
+            ================================================== -->
+
+            <div
+                class="letter-intro"
+                id="letterIntro"
+            >
+
+
+                <p class="letter-intro-text">
+
+                    I made something else for you...
+
+                    <br>
+
+                    Take your time.
+                    There's a little letter waiting for you. 💌
+
+                </p>
+
+
+                <div
+                    class="letter-envelope"
+                    onclick="toggleLetter()"
+                >
+
+                    💌
+
+                </div>
+
+
+                <button
+                    class="letter-button"
+                    id="letterButton"
+                    onclick="toggleLetter()"
+                >
+
+                    Open My Letter 💙
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LETTER
+            ================================================== -->
+
+            <div
+                class="letter"
+                id="letter"
+            >
+
+
+                <h2 class="letter-title">
+
+                    💌 A Little Letter For You
+
+                </h2>
+
+
+                <p class="greeting">
+
+                    To my dearest Krista,
+
+                </p>
+
+
+                <p>
+
+                    Happy Birthday po! I know na I have never
+                    been there as your day one, pero it’s been
+                    only months since we started talking and Ang bilis ng panahon.
+
+                </p>
+
+
+                <p>
+
+                    In those few months, I got to know you
+                    little by little, and I’m really glad na
+                    somehow, nagkaroon ako ng chance na
+                    makilala ka. I hope I can express it more,
+                    how really glad I am that I got to know you.
+
+                </p>
+
+
+                <p>
+
+                    Ever since you came into my life, you’ve
+                    somehow made every day a little brighter.
+                    You’ve become someone I look forward to
+                    talking to, someone I genuinely enjoy
+                    having around, and honestly, someone
+                    I’ve grown quite fond of and syempre someone I look up into na din (WOW).
+
+                </p>
+
+
+                <p>
+
+                    And ayun, this letter may not be much,
+                    pero i hope na you'd like it.
+                    gusto ko lang na may ibigay or gawin something for you
+                    because you deserve to have something
+                    special on your birthday.
+
+                </p>
+
+
+                <p>
+
+                    Since ayun nga, I know na lately na
+                    sobrang busy mo sa work, and all the
+                    hardships and adjustments that you’re
+                    facing po right now
+
+                </p>
+
+
+                <p>
+
+                    If you could only see it through my eyes,
+                    you’d know how I really see how
+                    hardworking and eager ka to be better and i know na u got this.
+                    And I'll never stop to show you na I’m really really proud of you.
+
+                </p>
+
+
+                <p>
+
+                    May this new year of your life bring you
+                    peace, success, love, and countless
+                    beautiful moments. I hope every dream
+                    in your heart finds its way into reality,
+                    and I hope you always remember that
+                    there’s someone here who will always be
+                    cheering for you.
+
+                </p>
+
+
+                <!-- SPECIAL LINE -->
+
+                <p class="special-line">
+
+                    Always remember lang na im here always and if the world ever nears its end, I will always
+                    come for you.
+                    
+
+                </p>
+
+
+                <p>
+
+                    Happy Birthday, Krista. I hope you have
+                    the happiest birthday, and I hope this
+                    year will be kind to you. 💙
+
+                </p>
+
+
+                <div class="signature">
+
+                    With asim,
+
+                    <br>
+
+                    KUMAG 💙
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SPOTIFY
+            ================================================== -->
+
+            <div class="music-section">
+
+
+                <h2 class="music-title">
+
+                    Song for you madamm 
+
+                </h2>
+
+
+                <p class="music-description">
+
+                   Bagay ata to dito boi 💙 (HBD song sana e kaso ang kengkoy ata)
+
+                </p>
+
+
+                <div class="spotify-container">
+
+
+                    <!--
+                        About You — The 1975
+
+                        Official Spotify track ID:
+                        1fDFHXcykq4iw8Gg7s5hG9
+                    -->
+
+
+                    <iframe
+                        src="https://open.spotify.com/embed/track/1fDFHXcykq4iw8Gg7s5hG9?utm_source=generator"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                    >
+                    </iframe>
+
+
+                </div>
+
+
+                <!-- FALLBACK -->
+
+                <a
+                    class="spotify-button"
+                    href="https://open.spotify.com/track/1fDFHXcykq4iw8Gg7s5hG9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    🎧 Listen on Spotify
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FINAL MESSAGE
+            ================================================== -->
+
+            <div class="final-message">
+
+
+                <h2>
+
+                    Once again... 💙
+
+                </h2>
+
+
+                <p>
+
+                    Happy Birthday, Krista! 🎂
+
+                    <br><br>
+
+                    I hope you have the happiest birthday,
+                    and I hope this year will be kind to you.
+
+                    <br><br>
+
+                    You deserve so many beautiful things.
+
+                </p>
+
+
+                <div class="final-heart">
+
+                    💙
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ===================================================== -->
+
+    <script>
+
+
+        /* =====================================================
+           OPEN SURPRISE
+        ===================================================== */
+
+        function openSurprise() {
+
+
+            const opening =
+                document.getElementById(
+                    "opening"
+                );
+
+
+            const birthday =
+                document.getElementById(
+                    "birthday"
+                );
+
+
+            opening.style.opacity =
+                "0";
+
+
+            setTimeout(
+                function() {
+
+
+                    opening.style.display =
+                        "none";
+
+
+                    birthday.style.display =
+                        "block";
+
+
+                    window.scrollTo(
+                        0,
+                        0
+                    );
+
+
+                    createFloatingDecorations();
+
+
+                },
+                1000
+            );
+
+        }
+
+
+
+        /* =====================================================
+           OPEN / CLOSE LETTER
+        ===================================================== */
+
+        function toggleLetter() {
+
+
+            const letter =
+                document.getElementById(
+                    "letter"
+                );
+
+
+            const button =
+                document.getElementById(
+                    "letterButton"
+                );
+
+
+            const envelope =
+                document.querySelector(
+                    ".letter-envelope"
+                );
+
+
+            const isOpen =
+                letter.classList.contains(
+                    "open"
+                );
+
+
+            /* =========================================
+               CLOSE LETTER
+            ========================================= */
+
+            if (isOpen) {
+
+
+                letter.classList.remove(
+                    "open"
+                );
+
+
+                button.innerHTML =
+                    "Open My Letter 💙";
+
+
+                envelope.innerHTML =
+                    "💌";
+
+
+                /*
+                    Scroll back to the envelope
+                */
+
+                setTimeout(
+                    function() {
+
+                        document
+                            .getElementById(
+                                "letterIntro"
+                            )
+                            .scrollIntoView({
+                                behavior:
+                                    "smooth",
+
+                                block:
+                                    "center"
+                            });
+
+                    },
+                    300
+                );
+
+
+            }
+
+
+            /* =========================================
+               OPEN LETTER
+            ========================================= */
+
+            else {
+
+
+                letter.classList.add(
+                    "open"
+                );
+
+
+                button.innerHTML =
+                    "Close My Letter 💙";
+
+
+                envelope.innerHTML =
+                    "💙";
+
+
+                /*
+                    Wait for opening animation,
+                    then scroll to letter.
+                */
+
+                setTimeout(
+                    function() {
+
+                        letter.scrollIntoView({
+                            behavior:
+                                "smooth",
+
+                            block:
+                                "start"
+                        });
+
+                    },
+                    500
+                );
+
+            }
+
+        }
+
+
+
+        /* =====================================================
+           FLOATING DECORATIONS
+        ===================================================== */
+
+        function createFloatingDecorations() {
+
+
+            setInterval(
+                function() {
+
+
+                    const item =
+                        document.createElement(
+                            "div"
+                        );
+
+
+                    item.classList.add(
+                        "floating"
+                    );
+
+
+                    const decorations = [
+
+                        "💙",
+                        "💜",
+                        "💕",
+                        "💗",
+                        "✨",
+                        "⭐",
+                        "🌺"
+
+                    ];
+
+
+                    item.innerHTML =
+                        decorations[
+                            Math.floor(
+                                Math.random()
+                                *
+                                decorations.length
+                            )
+                        ];
+
+
+                    item.style.left =
+                        Math.random()
+                        *
+                        100
+                        +
+                        "vw";
+
+
+                    item.style.fontSize =
+                        (
+                            15
+                            +
+                            Math.random() * 20
+                        )
+                        +
+                        "px";
+
+
+                    item.style.animationDuration =
+                        (
+                            5
+                            +
+                            Math.random() * 5
+                        )
+                        +
+                        "s";
+
+
+                    document.body.appendChild(
+                        item
+                    );
+
+
+                    setTimeout(
+                        function() {
+
+                            item.remove();
+
+                        },
+                        10000
+                    );
+
+
+                },
+                600
+            );
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
